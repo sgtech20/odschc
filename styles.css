@@ -1,0 +1,283 @@
+@keyframes zoomIn{
+    from{
+        scale: 0%;
+    }
+
+    to{
+        scale: 100%;
+    }
+}
+@keyframes slideIn{
+    from{
+        transform: translateY(-10%);
+    }
+
+    to{
+        transform: translateY(100%);
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    margin: auto;
+    scrollbar-color: blue;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, blue, white, blue);
+    border-radius: 10px;
+}
+/* header styling starts here */
+/* NAV LINKS STYLING ends here  */
+.nav_container, nav{
+    box-shadow: inset .2px .2px 6px rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+    /* margin: auto; */
+    box-sizing: border-box;
+}
+.nav_container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    box-shadow: inset .2px .2px 6px rgb(0, 0, 0);
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) , rgba(255, 255, 255, 0.8)), url(./images/ODCHC-Logo.png);
+    background-position: center center;
+    background-size: contain;
+    box-sizing: border-box;
+}
+ .odschc_logo, img{
+    width: 200px;
+}
+.nav_link ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.nav_link > ul > li{
+    font-size: .9em;
+    font-weight: bolder;
+    text-decoration-line: none;
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+.nav_link ul li:first-child{
+    background-color: orangered;
+    border-radius: 10%;
+    animation: zoomIn .5s;
+}
+.nav_link ul li:active{
+    background-color: orangered;
+    border-radius: 50%;
+    text-align: center;
+    animation: zoomIn .5s;
+}
+.nav_link > ul > li > a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* NAV LINKS STYLING ends here  */
+
+/* nav_blog_post styling starts here  */
+.nav_blog_post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(55, 55, 220);
+}
+.nav_blog_post p{
+    animation: zoomIn 10s infinite;
+}
+.nav_blog_post a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: orangered;
+    text-align: center;
+    word-wrap: break-word;
+}
+/* nav_blog_post styling ends here  */
+
+/* hero styling starts here  */
+.hero_text{
+    background:  linear-gradient(to right, rgba(16, 24, 235, 0.2) , rgba(16, 24, 235, 0.2)), url(./images/health.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    /* animation: zoomIn 10s; */
+}
+.second_hero_text{
+    background:  linear-gradient(to right, rgba(169, 170, 213, 0.5) , rgba(141, 143, 204, 0.5)), url(./images/8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.hero_text > .hero_header, .hero_para, .hero_link{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    animation: zoomIn 2s;
+    color: #000;
+    font-weight: 900;
+}
+.hero_para{
+    margin-bottom: 50px;
+}
+.hero_link{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px dotted black;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+.hero_link:hover{
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: .5s;
+}
+/* hero styling ends here  */
+
+/* header styling starts here */
+
+/* MAIN STYLING STARTS HERE  */
+main{
+    background:  linear-gradient(to right, rgba(41, 23, 243, 0.3) , rgba(41, 23, 243, 0.3)), url(./images/6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* counter styling starts here  */
+.counter_container{
+    background-color:rgb(55, 55, 220);
+    font-family: serif;
+    font-weight: bolder;
+}
+.counter_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(55, 55, 220);
+    padding: 20px 0px;
+}
+.counter_menu > div{
+    border: 2px solid white;
+    width: 80vw;
+    text-align: center;
+    padding: 10px;
+}
+.counter_menu > h2{
+    padding-right: 20px;
+    text-align: center;
+}
+/* counter styling ends here  */
+
+/* what_we_do styling starts here  */
+.what_we_do{
+    text-align: center;
+    margin-top: 150px;
+}
+.what_we_do h2{
+    font-weight: 900;
+    font-size: 3.5em;
+    color: white;
+    font-family: serif;
+}
+/* what_we_do styling ends here  */
+
+/* vision and mission styling starts here  */
+.vision_mission_healthBog{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+.vision_mission{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: -150px;
+    text-align: center;
+    line-height: 2;
+}
+.vision_mission > .vision{
+    background-color: orangered;
+    flex-basis: 45%;
+    box-shadow: 2px 2px 10px black;
+    height: 100%;
+    padding-left: 5%;
+    /* font-family: Rubik Broken Fax; */
+}
+.vision_mission > .vision > .vision_background{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* font-family: Rubik Broken Fax; */
+}
+.vision_mission > .vision > .vision_background > h2{
+    font-family: Rubik Broken Fax;
+}
+
+.mission{
+    background-color: orangered;
+    flex-basis: 45%;
+    box-shadow: 2px 2px 10px black;
+    height: 100%;
+    padding-left: 5%;
+}
+.vision_mission > .mission > .mission_background{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /* font-family: Rubik Broken Fax; */
+}
+.vision_mission > .mission > .mission_background> h2{
+    font-family: Rubik Broken Fax;
+}
+/* vision and mission styling ends here  */
+/* Main styling ends here  */
